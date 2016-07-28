@@ -6,7 +6,7 @@
 //  Copyright © 2016 FunTimes. All rights reserved.
 //
 
-import Cocoa
+//import Cocoa
 
 public let VERSION = "0.1-GIT"
 public let API_VERSION = "0.1"
