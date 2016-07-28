@@ -1,5 +1,6 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "https://cloud-images.ubuntu.com/vagrant/wily/current/wily-server-cloudimg-amd64-vagrant-disk1.box"
+  config.vm.network "forwarded_port", guest: 19132, host: 19132
  
 config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get --assume-yes install clang libicu-dev
