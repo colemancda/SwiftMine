@@ -10,7 +10,7 @@ import Foundation
 
 public class MainLogger: NSObject, Logger {
     
-    private let logFile: NSFileHandle?
+    private let logFile: FileHandle?
     private let logStream = ""
     private let shutdown: Bool
     
@@ -24,45 +24,45 @@ public class MainLogger: NSObject, Logger {
         //TODO: Implement
     }
     
-    public func emergency(message: String) {
+    public func emergency(_ message: String) {
         send("[EMERGENCY] " + message)
     }
     
-    public func alert(message: String) {
+    public func alert(_ message: String) {
         send("[ALERT] " + message)
     }
     
-    public func critical(message: String) {
+    public func critical(_ message: String) {
         send("[CRITICAL] " + message)
     }
     
-    public func error(message: String) {
+    public func error(_ message: String) {
         send("[ERROR] " + message)
     }
     
-    public func warning(message: String) {
+    public func warning(_ message: String) {
         send("[WARNING] " + message)
     }
     
-    public func notice(message: String) {
+    public func notice(_ message: String) {
         send("[NOTICE] " + message)
     }
     
-    public func info(message: String) {
+    public func info(_ message: String) {
         send("[INFO] " + message)
     }
     
-    public func debug(message: String) {
+    public func debug(_ message: String) {
         if (logDebug) {
             return;
         }
     }
     
-    private func send(message: String) {
+    private func send(_ message: String) {
         send(message, level: -1)
     }
     
-    private func send(message: String, level: Int) {
+    private func send(_ message: String, level: Int) {
         print(message)
     }
     

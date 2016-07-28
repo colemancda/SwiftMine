@@ -9,12 +9,12 @@
 import Foundation
 
 public enum LogLevel {
-    case EMERGENCY
-    case ALERT
-    case CRITICAL
-    case ERROR
-    case WARNING
-    case NOTICE
-    case INFO
-    case DEBUG
+    case emergency
+    case alert
+    case critical
+    case error
+    case warning
+    case notice
+    case info
+    case debug
 }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		337535CD1D03C9A600F66065 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337535CC1D03C9A600F66065 /* Server.swift */; };
 		338B6C3C1CDB153000F66065 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338B6C3B1CDB153000F66065 /* main.swift */; };
-		33ECB4041CE026A200F66065 /* InterruptibleThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB4031CE026A200F66065 /* InterruptibleThread.swift */; };
 		33ECB4091CE040DB00F66065 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB4081CE040DB00F66065 /* Block.swift */; };
 		33ECB4181CE0494700F66065 /* CommandReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB40B1CE0412E00F66065 /* CommandReader.swift */; };
 		33ECB4191CE0495300F66065 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB40D1CE0412E00F66065 /* Entity.swift */; };
@@ -34,9 +34,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		337535CC1D03C9A600F66065 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		337535CE1D03CF8A00F66065 /* SwiftMine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftMine-Bridging-Header.h"; sourceTree = "<group>"; };
 		338B6C381CDB153000F66065 /* SwiftMine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftMine; sourceTree = BUILT_PRODUCTS_DIR; };
 		338B6C3B1CDB153000F66065 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		33ECB4031CE026A200F66065 /* InterruptibleThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterruptibleThread.swift; sourceTree = "<group>"; };
 		33ECB4081CE040DB00F66065 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Block.swift; path = Block/Block.swift; sourceTree = "<group>"; };
 		33ECB40B1CE0412E00F66065 /* CommandReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandReader.swift; sourceTree = "<group>"; };
 		33ECB40D1CE0412E00F66065 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 			children = (
 				338B6C3A1CDB153000F66065 /* SwiftMine */,
 				338B6C391CDB153000F66065 /* Products */,
+				337535CE1D03CF8A00F66065 /* SwiftMine-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +89,7 @@
 				33ECB4141CE0412E00F66065 /* Utils */,
 				338B6DC01CDEF67D00F66065 /* Block */,
 				338B6C3B1CDB153000F66065 /* main.swift */,
-				33ECB4031CE026A200F66065 /* InterruptibleThread.swift */,
+				337535CC1D03C9A600F66065 /* Server.swift */,
 			);
 			path = SwiftMine;
 			sourceTree = "<group>";
@@ -178,11 +180,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = FunTimes;
 				TargetAttributes = {
 					338B6C371CDB153000F66065 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -218,7 +221,7 @@
 				33ECB41F1CE0495300F66065 /* MainLogger.swift in Sources */,
 				338B6C3C1CDB153000F66065 /* main.swift in Sources */,
 				33ECB4181CE0494700F66065 /* CommandReader.swift in Sources */,
-				33ECB4041CE026A200F66065 /* InterruptibleThread.swift in Sources */,
+				337535CD1D03C9A600F66065 /* Server.swift in Sources */,
 				33ECB4091CE040DB00F66065 /* Block.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,22 +314,32 @@
 		338B6C401CDB153000F66065 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftMine",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftMine-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		338B6C411CDB153000F66065 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftMine",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftMine-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -31,7 +31,7 @@ public class MovingObjectPosition {
     
     
     
-    public static func fromBlock(x: Int, y: Int, z: Int, side: Int, hitVector: Vector3) -> MovingObjectPosition {
+    public static func fromBlock(_ x: Int, y: Int, z: Int, side: Int, hitVector: Vector3) -> MovingObjectPosition {
         let objectPosition: MovingObjectPosition = MovingObjectPosition()
         objectPosition.typeOfHit = 0
         objectPosition.blockX = x
@@ -41,7 +41,7 @@ public class MovingObjectPosition {
         return objectPosition
     }
     
-    public static func fromEntity(entity: Entity) -> MovingObjectPosition {
+    public static func fromEntity(_ entity: Entity) -> MovingObjectPosition {
         let objectPosition: MovingObjectPosition = MovingObjectPosition();
         objectPosition.typeOfHit = 1;
         objectPosition.entityHit = entity;
