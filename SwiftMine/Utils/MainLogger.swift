@@ -8,14 +8,11 @@
 
 import Foundation
 
-public class MainLogger: NSObject, Logger {
+public class MainLogger: NSObject {
     
-    private let logFile: FileHandle?
+//    private let logFile: FileHandle?
     private let logStream = ""
-    private let shutdown: Bool
     
-    private let logDebug: Bool
-    private let logger: MainLogger?
     public convenience init(logFile: String) {
         self.init(logFile: logFile, logDebug: false)
     }
@@ -53,9 +50,7 @@ public class MainLogger: NSObject, Logger {
     }
     
     public func debug(_ message: String) {
-        if (logDebug) {
-            return;
-        }
+
     }
     
     private func send(_ message: String) {

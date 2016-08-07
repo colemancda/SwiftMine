@@ -16,5 +16,17 @@ class Server {
     let PLAYER_MSG_TYPE_TIP = 1
     let PLAYER_MSG_TYPE_POPUP = 2
     
+    let PLAYER_LIST = []
     
+    let x: DataCompressor = DataCompressor()
+    let connectionHandler = ConnectionHandler()
+    
+    
+    private func addPlayer() {
+    
+    }
+    
+    public func start() {
+        
+    }
 }

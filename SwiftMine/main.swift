@@ -6,13 +6,13 @@
 //  Copyright © 2016 FunTimes. All rights reserved.
 //
 
-//import Cocoa
+import Foundation
 
 public let VERSION = "0.1-GIT"
 public let API_VERSION = "0.1"
 public let CODENAME = "RedOne"
-public let MINECRAFT_VERSION = "v0.14.x alpha"
-public let MINECRAFT_VERSION_NETWORK = "0.14.3"
+public let MINECRAFT_VERSION = "v0.15.4 alpha"
+public let MINECRAFT_VERSION_NETWORK = "0.15.4"
 
 public let PATH = FileManager.default.currentDirectoryPath
 public let DATA_PATH = PATH
@@ -34,3 +34,9 @@ for arg in ProcessInfo.processInfo.arguments {
 }
 
 let logger: MainLogger = MainLogger(logFile: DATA_PATH + "server.log")
+
+let server: Server = Server()
+
+
+
+
