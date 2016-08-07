@@ -26,9 +26,11 @@
 		3354F9551D52C289000DD7F2 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337535CC1D03C9A600F66065 /* Server.swift */; };
 		3354F9561D52C28B000DD7F2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338B6C3B1CDB153000F66065 /* main.swift */; };
 		3354F9F31D54AC5E000DD7F2 /* libraknet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3354F9F21D54AC5D000DD7F2 /* libraknet.a */; };
-		3354F9F71D54CFEF000DD7F2 /* DataCompressor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3354F9F61D54CFEF000DD7F2 /* DataCompressor.mm */; };
 		3354F9F81D54FD1E000DD7F2 /* libraknet.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3354F9F21D54AC5D000DD7F2 /* libraknet.a */; };
 		3354F9FD1D572FB1000DD7F2 /* ConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354F9FC1D572FB1000DD7F2 /* ConnectionHandler.swift */; };
+		3354FA011D573870000DD7F2 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354FA001D573870000DD7F2 /* Connection.swift */; };
+		3354FA031D573A15000DD7F2 /* RakPeerInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3354FA021D573A15000DD7F2 /* RakPeerInterface.mm */; };
+		3354FA081D573BD0000DD7F2 /* DataCompressor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3354FA041D573A33000DD7F2 /* DataCompressor.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -206,9 +208,12 @@
 		3354F9F01D54AC30000DD7F2 /* WSAStartupSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAStartupSingleton.h; sourceTree = "<group>"; };
 		3354F9F11D54AC30000DD7F2 /* XBox360Includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBox360Includes.h; sourceTree = "<group>"; };
 		3354F9F21D54AC5D000DD7F2 /* libraknet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libraknet.a; sourceTree = "<group>"; };
-		3354F9F51D54CFB6000DD7F2 /* DataCompressor_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCompressor_objc.h; sourceTree = "<group>"; };
-		3354F9F61D54CFEF000DD7F2 /* DataCompressor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataCompressor.mm; sourceTree = "<group>"; };
 		3354F9FC1D572FB1000DD7F2 /* ConnectionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionHandler.swift; path = Network/ConnectionHandler.swift; sourceTree = "<group>"; };
+		3354FA001D573870000DD7F2 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		3354FA021D573A15000DD7F2 /* RakPeerInterface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RakPeerInterface.mm; path = raknet_wrapper/RakPeerInterface.mm; sourceTree = "<group>"; };
+		3354FA041D573A33000DD7F2 /* DataCompressor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DataCompressor.mm; path = raknet_wrapper/DataCompressor.mm; sourceTree = "<group>"; };
+		3354FA051D573A33000DD7F2 /* DataCompressor_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataCompressor_objc.h; path = raknet_wrapper/DataCompressor_objc.h; sourceTree = "<group>"; };
+		3354FA091D573C4F000DD7F2 /* RakPeerInterface_objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RakPeerInterface_objc.h; path = raknet_wrapper/RakPeerInterface_objc.h; sourceTree = "<group>"; };
 		337535CC1D03C9A600F66065 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		337535CE1D03CF8A00F66065 /* SwiftMine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftMine-Bridging-Header.h"; sourceTree = "<group>"; };
 		338B6C381CDB153000F66065 /* SwiftMine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftMine; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -421,8 +426,10 @@
 		3354F9F41D54CF29000DD7F2 /* raknet_wrapper */ = {
 			isa = PBXGroup;
 			children = (
-				3354F9F61D54CFEF000DD7F2 /* DataCompressor.mm */,
-				3354F9F51D54CFB6000DD7F2 /* DataCompressor_objc.h */,
+				3354FA041D573A33000DD7F2 /* DataCompressor.mm */,
+				3354FA051D573A33000DD7F2 /* DataCompressor_objc.h */,
+				3354FA021D573A15000DD7F2 /* RakPeerInterface.mm */,
+				3354FA091D573C4F000DD7F2 /* RakPeerInterface_objc.h */,
 			);
 			name = raknet_wrapper;
 			sourceTree = "<group>";
@@ -431,6 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				3354F9FC1D572FB1000DD7F2 /* ConnectionHandler.swift */,
+				3354FA001D573870000DD7F2 /* Connection.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -591,12 +599,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3354FA031D573A15000DD7F2 /* RakPeerInterface.mm in Sources */,
 				3354F94F1D52C270000DD7F2 /* Metadatable.swift in Sources */,
 				3354F9451D52C25E000DD7F2 /* DataHandler.swift in Sources */,
 				3354F9461D52C25E000DD7F2 /* InventoryDataHandler.swift in Sources */,
 				3354F9471D52C25E000DD7F2 /* PlayerDataHandler.swift in Sources */,
 				3354F9FD1D572FB1000DD7F2 /* ConnectionHandler.swift in Sources */,
-				3354F9F71D54CFEF000DD7F2 /* DataCompressor.mm in Sources */,
 				3354F9481D52C25E000DD7F2 /* OnlinePlayerDataHandler.swift in Sources */,
 				3354F9491D52C25E000DD7F2 /* OfflinePlayerDataHandler.swift in Sources */,
 				3354F94A1D52C261000DD7F2 /* Player.swift in Sources */,
@@ -604,10 +612,12 @@
 				3354F94C1D52C268000DD7F2 /* Entity.swift in Sources */,
 				3354F94D1D52C26B000DD7F2 /* MovingObjectPosition.swift in Sources */,
 				3354F94E1D52C26D000DD7F2 /* Vector3.swift in Sources */,
+				3354FA011D573870000DD7F2 /* Connection.swift in Sources */,
 				3354F9501D52C274000DD7F2 /* Logger.swift in Sources */,
 				3354F9511D52C27F000DD7F2 /* LogLevel.swift in Sources */,
 				3354F9521D52C27F000DD7F2 /* MainLogger.swift in Sources */,
 				3354F9531D52C27F000DD7F2 /* ThreadedLogger.swift in Sources */,
+				3354FA081D573BD0000DD7F2 /* DataCompressor.mm in Sources */,
 				3354F9541D52C283000DD7F2 /* Block.swift in Sources */,
 				3354F9561D52C28B000DD7F2 /* main.swift in Sources */,
 				3354F9551D52C289000DD7F2 /* Server.swift in Sources */,

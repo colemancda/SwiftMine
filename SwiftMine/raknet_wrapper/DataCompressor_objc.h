@@ -16,7 +16,7 @@
 - (NSData*) compress: (NSData*) userData
                 size: (unsigned int) sizeInBytes;
 
-- (NSData*) decompress: (NSData*) input;
+//- (NSData*) decompress: (NSData*) input;
 
 @end
 
