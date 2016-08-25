@@ -9,5 +9,6 @@
 import Foundation
 
 class ConnectionHandler {
+    private var connection_list: Array<Connection> = []
     
 }

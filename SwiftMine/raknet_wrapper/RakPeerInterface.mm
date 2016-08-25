@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "RakPeerInterface_objc.h"
 #import "RakPeerInterface.h"
+#import "PacketPriority.h"
 
 @interface RakPeerInterface()
 
@@ -37,6 +38,7 @@
             remotePort: (unsigned short) remotePort
                   data: (NSData*) data {
     self.interface->AdvertiseSystem([host cStringUsingEncoding:NSUTF8StringEncoding], (unsigned short)remotePort, (const char *)data.bytes, (int)data.length);
+    
 }
 
 @end

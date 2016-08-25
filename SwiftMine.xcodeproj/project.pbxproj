@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331AEBBB1D6A7CEF00917244 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331AEBB91D6A7CEF00917244 /* Connection.swift */; };
+		331AEBBC1D6A7CEF00917244 /* MinecraftPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331AEBBA1D6A7CEF00917244 /* MinecraftPacket.swift */; };
 		3354F9451D52C25E000DD7F2 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354F93D1D52BF2C000DD7F2 /* DataHandler.swift */; };
 		3354F9461D52C25E000DD7F2 /* InventoryDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354F93E1D52BF2C000DD7F2 /* InventoryDataHandler.swift */; };
 		3354F9471D52C25E000DD7F2 /* PlayerDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354F93F1D52BF2C000DD7F2 /* PlayerDataHandler.swift */; };
 		3354F9481D52C25E000DD7F2 /* OnlinePlayerDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354F9391D52BEF4000DD7F2 /* OnlinePlayerDataHandler.swift */; };
 		3354F9491D52C25E000DD7F2 /* OfflinePlayerDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354F9431D52BF6D000DD7F2 /* OfflinePlayerDataHandler.swift */; };
 		3354F94A1D52C261000DD7F2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354F93B1D52BF17000DD7F2 /* Player.swift */; };
-		3354F94B1D52C263000DD7F2 /* CommandReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB40B1CE0412E00F66065 /* CommandReader.swift */; };
 		3354F94C1D52C268000DD7F2 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB40D1CE0412E00F66065 /* Entity.swift */; };
-		3354F94D1D52C26B000DD7F2 /* MovingObjectPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB40F1CE0412E00F66065 /* MovingObjectPosition.swift */; };
-		3354F94E1D52C26D000DD7F2 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB4111CE0412E00F66065 /* Vector3.swift */; };
 		3354F94F1D52C270000DD7F2 /* Metadatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB4131CE0412E00F66065 /* Metadatable.swift */; };
 		3354F9501D52C274000DD7F2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB4151CE0412E00F66065 /* Logger.swift */; };
 		3354F9511D52C27F000DD7F2 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECB4161CE0412E00F66065 /* LogLevel.swift */; };
@@ -28,9 +27,10 @@
 		3354F9F31D54AC5E000DD7F2 /* libraknet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3354F9F21D54AC5D000DD7F2 /* libraknet.a */; };
 		3354F9F81D54FD1E000DD7F2 /* libraknet.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3354F9F21D54AC5D000DD7F2 /* libraknet.a */; };
 		3354F9FD1D572FB1000DD7F2 /* ConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354F9FC1D572FB1000DD7F2 /* ConnectionHandler.swift */; };
-		3354FA011D573870000DD7F2 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3354FA001D573870000DD7F2 /* Connection.swift */; };
 		3354FA031D573A15000DD7F2 /* RakPeerInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3354FA021D573A15000DD7F2 /* RakPeerInterface.mm */; };
 		3354FA081D573BD0000DD7F2 /* DataCompressor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3354FA041D573A33000DD7F2 /* DataCompressor.mm */; };
+		33A9B24A1D6E181900CB9DA5 /* UDPEcho.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A9B2481D6E181900CB9DA5 /* UDPEcho.m */; };
+		33A9B24C1D6E1F8800CB9DA5 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A9B24B1D6E1F8800CB9DA5 /* BaseClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		331AEBB91D6A7CEF00917244 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Network/Connection.swift; sourceTree = "<group>"; };
+		331AEBBA1D6A7CEF00917244 /* MinecraftPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinecraftPacket.swift; path = Network/MinecraftPacket.swift; sourceTree = "<group>"; };
 		3354F9391D52BEF4000DD7F2 /* OnlinePlayerDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlinePlayerDataHandler.swift; path = Data/OnlinePlayerDataHandler.swift; sourceTree = "<group>"; };
 		3354F93B1D52BF17000DD7F2 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Player/Player.swift; sourceTree = "<group>"; };
 		3354F93D1D52BF2C000DD7F2 /* DataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataHandler.swift; path = Data/DataHandler.swift; sourceTree = "<group>"; };
@@ -209,7 +211,6 @@
 		3354F9F11D54AC30000DD7F2 /* XBox360Includes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBox360Includes.h; sourceTree = "<group>"; };
 		3354F9F21D54AC5D000DD7F2 /* libraknet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libraknet.a; sourceTree = "<group>"; };
 		3354F9FC1D572FB1000DD7F2 /* ConnectionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionHandler.swift; path = Network/ConnectionHandler.swift; sourceTree = "<group>"; };
-		3354FA001D573870000DD7F2 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		3354FA021D573A15000DD7F2 /* RakPeerInterface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RakPeerInterface.mm; path = raknet_wrapper/RakPeerInterface.mm; sourceTree = "<group>"; };
 		3354FA041D573A33000DD7F2 /* DataCompressor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DataCompressor.mm; path = raknet_wrapper/DataCompressor.mm; sourceTree = "<group>"; };
 		3354FA051D573A33000DD7F2 /* DataCompressor_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataCompressor_objc.h; path = raknet_wrapper/DataCompressor_objc.h; sourceTree = "<group>"; };
@@ -218,11 +219,11 @@
 		337535CE1D03CF8A00F66065 /* SwiftMine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftMine-Bridging-Header.h"; sourceTree = "<group>"; };
 		338B6C381CDB153000F66065 /* SwiftMine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftMine; sourceTree = BUILT_PRODUCTS_DIR; };
 		338B6C3B1CDB153000F66065 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		33A9B2481D6E181900CB9DA5 /* UDPEcho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UDPEcho.m; path = UDPEcho/UDPEcho.m; sourceTree = "<group>"; };
+		33A9B2491D6E181900CB9DA5 /* UDPEcho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UDPEcho.h; path = UDPEcho/UDPEcho.h; sourceTree = "<group>"; };
+		33A9B24B1D6E1F8800CB9DA5 /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
 		33ECB4081CE040DB00F66065 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Block.swift; path = Block/Block.swift; sourceTree = "<group>"; };
-		33ECB40B1CE0412E00F66065 /* CommandReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandReader.swift; sourceTree = "<group>"; };
 		33ECB40D1CE0412E00F66065 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		33ECB40F1CE0412E00F66065 /* MovingObjectPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingObjectPosition.swift; sourceTree = "<group>"; };
-		33ECB4111CE0412E00F66065 /* Vector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
 		33ECB4131CE0412E00F66065 /* Metadatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadatable.swift; sourceTree = "<group>"; };
 		33ECB4151CE0412E00F66065 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		33ECB4161CE0412E00F66065 /* LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
@@ -438,7 +439,8 @@
 			isa = PBXGroup;
 			children = (
 				3354F9FC1D572FB1000DD7F2 /* ConnectionHandler.swift */,
-				3354FA001D573870000DD7F2 /* Connection.swift */,
+				331AEBB91D6A7CEF00917244 /* Connection.swift */,
+				331AEBBA1D6A7CEF00917244 /* MinecraftPacket.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -463,21 +465,20 @@
 		338B6C3A1CDB153000F66065 /* SwiftMine */ = {
 			isa = PBXGroup;
 			children = (
+				33A9B2441D6E169200CB9DA5 /* UDPEcho */,
 				3354F9F91D572F56000DD7F2 /* Network */,
 				3354F9F41D54CF29000DD7F2 /* raknet_wrapper */,
 				3354F9F21D54AC5D000DD7F2 /* libraknet.a */,
 				3354F9571D54AC30000DD7F2 /* raknet_headers */,
 				3354F9311D52AEB6000DD7F2 /* Data */,
 				3354F92E1D52AE87000DD7F2 /* Player */,
-				33ECB40A1CE0412E00F66065 /* Command */,
 				33ECB40C1CE0412E00F66065 /* Entity */,
-				33ECB40E1CE0412E00F66065 /* Level */,
-				33ECB4101CE0412E00F66065 /* Math */,
 				33ECB4121CE0412E00F66065 /* Metadata */,
 				33ECB4141CE0412E00F66065 /* Utils */,
 				338B6DC01CDEF67D00F66065 /* Block */,
 				338B6C3B1CDB153000F66065 /* main.swift */,
 				337535CC1D03C9A600F66065 /* Server.swift */,
+				33A9B24B1D6E1F8800CB9DA5 /* BaseClass.swift */,
 			);
 			path = SwiftMine;
 			sourceTree = "<group>";
@@ -490,12 +491,13 @@
 			name = Block;
 			sourceTree = "<group>";
 		};
-		33ECB40A1CE0412E00F66065 /* Command */ = {
+		33A9B2441D6E169200CB9DA5 /* UDPEcho */ = {
 			isa = PBXGroup;
 			children = (
-				33ECB40B1CE0412E00F66065 /* CommandReader.swift */,
+				33A9B2481D6E181900CB9DA5 /* UDPEcho.m */,
+				33A9B2491D6E181900CB9DA5 /* UDPEcho.h */,
 			);
-			path = Command;
+			name = UDPEcho;
 			sourceTree = "<group>";
 		};
 		33ECB40C1CE0412E00F66065 /* Entity */ = {
@@ -504,22 +506,6 @@
 				33ECB40D1CE0412E00F66065 /* Entity.swift */,
 			);
 			path = Entity;
-			sourceTree = "<group>";
-		};
-		33ECB40E1CE0412E00F66065 /* Level */ = {
-			isa = PBXGroup;
-			children = (
-				33ECB40F1CE0412E00F66065 /* MovingObjectPosition.swift */,
-			);
-			path = Level;
-			sourceTree = "<group>";
-		};
-		33ECB4101CE0412E00F66065 /* Math */ = {
-			isa = PBXGroup;
-			children = (
-				33ECB4111CE0412E00F66065 /* Vector3.swift */,
-			);
-			path = Math;
 			sourceTree = "<group>";
 		};
 		33ECB4121CE0412E00F66065 /* Metadata */ = {
@@ -601,6 +587,7 @@
 			files = (
 				3354FA031D573A15000DD7F2 /* RakPeerInterface.mm in Sources */,
 				3354F94F1D52C270000DD7F2 /* Metadatable.swift in Sources */,
+				331AEBBC1D6A7CEF00917244 /* MinecraftPacket.swift in Sources */,
 				3354F9451D52C25E000DD7F2 /* DataHandler.swift in Sources */,
 				3354F9461D52C25E000DD7F2 /* InventoryDataHandler.swift in Sources */,
 				3354F9471D52C25E000DD7F2 /* PlayerDataHandler.swift in Sources */,
@@ -608,16 +595,15 @@
 				3354F9481D52C25E000DD7F2 /* OnlinePlayerDataHandler.swift in Sources */,
 				3354F9491D52C25E000DD7F2 /* OfflinePlayerDataHandler.swift in Sources */,
 				3354F94A1D52C261000DD7F2 /* Player.swift in Sources */,
-				3354F94B1D52C263000DD7F2 /* CommandReader.swift in Sources */,
 				3354F94C1D52C268000DD7F2 /* Entity.swift in Sources */,
-				3354F94D1D52C26B000DD7F2 /* MovingObjectPosition.swift in Sources */,
-				3354F94E1D52C26D000DD7F2 /* Vector3.swift in Sources */,
-				3354FA011D573870000DD7F2 /* Connection.swift in Sources */,
+				33A9B24C1D6E1F8800CB9DA5 /* BaseClass.swift in Sources */,
 				3354F9501D52C274000DD7F2 /* Logger.swift in Sources */,
 				3354F9511D52C27F000DD7F2 /* LogLevel.swift in Sources */,
 				3354F9521D52C27F000DD7F2 /* MainLogger.swift in Sources */,
 				3354F9531D52C27F000DD7F2 /* ThreadedLogger.swift in Sources */,
+				331AEBBB1D6A7CEF00917244 /* Connection.swift in Sources */,
 				3354FA081D573BD0000DD7F2 /* DataCompressor.mm in Sources */,
+				33A9B24A1D6E181900CB9DA5 /* UDPEcho.m in Sources */,
 				3354F9541D52C283000DD7F2 /* Block.swift in Sources */,
 				3354F9561D52C28B000DD7F2 /* main.swift in Sources */,
 				3354F9551D52C289000DD7F2 /* Server.swift in Sources */,

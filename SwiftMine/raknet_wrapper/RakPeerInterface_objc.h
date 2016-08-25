@@ -11,6 +11,12 @@
 
 @interface RakPeerInterface : NSObject
 
+-(void)addToBanList: (NSString*) IP
+            seconds: (NSTimeInterval) seconds;
+-(void)addToSecurityExceptionList: (NSString*) IP;
+-(void)advertiseSystem: (NSString*) host
+            remotePort: (unsigned short) remotePort
+                  data: (NSData*) data;
 @end
 
 #endif /* RakPeerInterface_h */

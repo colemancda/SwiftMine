@@ -8,19 +8,9 @@
 
 import Foundation
 
-class Server {
-    let BROADCAST_CHANNEL_ADMINISTRATIVE = "pocketmine.broadcast.admin"
-    let BROADCAST_CHANNEL_USERS = "pocketmine.broadcast.user"
-    
-    let PLAYER_MSG_TYPE_MESSAGE = 0
-    let PLAYER_MSG_TYPE_TIP = 1
-    let PLAYER_MSG_TYPE_POPUP = 2
-    
-    let PLAYER_LIST = []
+class Server: ConnectionHandler {
     
     let x: DataCompressor = DataCompressor()
-    let connectionHandler = ConnectionHandler()
-    
     
     private func addPlayer() {
     
