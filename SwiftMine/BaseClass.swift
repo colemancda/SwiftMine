@@ -11,9 +11,9 @@ import Foundation
 class BaseClass: NSObject {
     private let configuration_filename = "Config/swiftmine.sws"
     
-    private var configuration_array: Dictionary<String, Any> {
+    internal var configuration_array: Dictionary<String, Any> {
         get {
-            if FileManager.default.fileExists(atPath: configuration_filename) {
+            if FileManager.default.fileExists(atPath: PATH + configuration_filename) {
                 return NSUnarchiver.unarchiveObject(withFile: configuration_filename) as! Dictionary<String, Any>
             } else {
                 //default configuration dictionary

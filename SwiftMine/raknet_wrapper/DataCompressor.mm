@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DataCompressor.h"
+#import <RakNet/DataCompressor.h>
 #import "DataCompressor_objc.h"
-#import "BitStream.h"
+#import <raknet/BitStream.h>
 
 @interface DataCompressor()
 

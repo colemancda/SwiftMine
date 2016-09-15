@@ -3,5 +3,5 @@
 //
 
 #import "DataCompressor_objc.h"
-#import "RakPeerInterface_objc.h"
-#import "UDPEcho.h"
+#import "RakPeer_objc.h"
+#import "RakPeerDelegate.h"

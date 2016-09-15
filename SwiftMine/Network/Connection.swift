@@ -8,9 +8,9 @@
 
 import Foundation
 
-internal class Connection: BaseClass, UDPEchoDelegate {
+internal class Connection: BaseClass {
     private let connectedPlayer: Player;
-    private var UDPSession = UDPEcho()
+    private var RakNetSession = RakPeer()
     
     init(sourcePlayer: Player) {
         //initialize vars
@@ -19,9 +19,6 @@ internal class Connection: BaseClass, UDPEchoDelegate {
         //initialize superclass
         super.init()
         
-        //UDP delegation
-        UDPSession?.delegate = self
-        UDPSession?.startServer(onPort: 19132)
     }
     
     

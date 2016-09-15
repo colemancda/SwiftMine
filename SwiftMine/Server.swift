@@ -17,6 +17,6 @@ class Server: ConnectionHandler {
     }
     
     public func start() {
-        
+        listen(onPort: self.configuration_array["port"] as! Int)
     }
 }
